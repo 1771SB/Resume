@@ -1,0 +1,158 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100dvh;
+    background-image: linear-gradient(to right bottom, white, rgb(116, 155, 194));
+}
+
+.contain-all {
+    min-height: 100dvh;
+    max-width: 1200px;
+    margin-inline: auto;
+    border-radius: 25px;
+}
+
+.hn {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.headshot, .name, .small-contact {
+    margin: 0.15%;
+    background-color: rgb(96, 150, 180);
+    border-radius: 25px;
+  }
+
+.headshot {  
+    text-align: center;
+    flex: 0 0 150px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px 0px, rgba(0, 0, 0, 0.19) 0px 6px 20px 0px;
+}
+
+#img, #csv {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+
+.name {
+    flex: 1 0 300px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px 0px, rgba(0, 0, 0, 0.19) 0px 6px 20px 0px;
+    text-align: center;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.small-c {
+    display: flex;
+    font-size: 1.5rem;
+}
+
+.osu {
+    width: 50px;
+    height: 50px;
+}
+
+.crwrapper {
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.cr {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.small-contact {
+    flex: 1 0 375px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px 0px, rgba(0, 0, 0, 0.19) 0px 6px 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.cimage {
+    width: 50px;
+}
+
+.contact, .resume {
+    margin: 0.15%;
+    border-radius: 25px;
+}
+
+.contact {
+    text-align: center;
+    flex: 0 1 150px;
+    background-color: rgb(96, 150, 180);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px 0px, rgba(0, 0, 0, 0.19) 0px 6px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.resume {
+    flex: 1 0 375px;
+    background-color: rgb(147, 191, 207);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px 0px, rgba(0, 0, 0, 0.19) 0px 6px 20px 0px;
+    display: flex;
+}
+
+.content {
+    flex: 1 0 320px;
+    
+}
+
+.sc {
+    padding: 20px;
+    max-height: 84dvh;
+    overflow-y: auto;
+}
+
+h1, .osuasu {
+    text-align: center;
+}
+
+.edu-wrapper {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    /* gap: 15px; */
+}
+
+.osu {
+    width: 50px;
+    height: 50px;
+}
+
+.tabs {
+    flex: 0 0 30px;
+}
+
+.tabs button {
+    height: 15vh;
+    width: 35px;
+  }
+
+#tab1 {
+    background-color: rgb(147, 191, 207);
+    border: transparent;
+    border-top-right-radius: 25px;
+}
+
+#tab2 {
+    background-color: rgb(116, 155, 194);
+    border: transparent;
+}
+
+#tab3 {
+    background-color: rgb(116, 155, 194);
+    border: transparent;
+    border-bottom-left-radius: 25px;
+}
