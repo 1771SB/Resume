@@ -60,11 +60,6 @@ body {
     height: 50px;
 }
 
-.crwrapper {
-    /* display: flex;
-    flex-direction: column; */
-}
-
 .cr {
     display: flex;
     flex-wrap: wrap;
