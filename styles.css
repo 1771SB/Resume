@@ -4,12 +4,13 @@
     box-sizing: border-box;
 }
 
-body {
+#desktop {
     min-height: 100dvh;
     background-image: linear-gradient(to right bottom, white, rgb(116, 155, 194));
 }
 
 .contain-all {
+    display: block;
     min-height: 100dvh;
     max-width: 1200px;
     margin-inline: auto;
@@ -59,7 +60,7 @@ body {
     width: 50px;
     height: 50px;
 }
-
+    
 .cr {
     display: flex;
     flex-wrap: wrap;
@@ -150,4 +151,129 @@ h1, .osuasu {
     background-color: rgb(116, 155, 194);
     border: transparent;
     border-bottom-left-radius: 25px;
+}
+
+#mobile {
+    display: none;
+    max-height: 100dvh;
+    background: linear-gradient(-45deg, #23a6d5, #23d5ab);
+    background-size: 250% 250%;
+    overflow: auto;
+}
+
+.content_m {
+    padding: 10px;
+    max-width: 430px;
+    margin-inline: auto;
+}
+
+.edu-wrapper_m, .we {
+    margin-bottom: 4%;
+    padding: 10px;
+    background: rgba(0,0,0,0.2);
+    backdrop-filter: saturate(180%) blur(10px);
+    border-radius: 10px;
+}
+
+.osuasu_m, main h1, .we h2 {
+    text-align: center;
+}
+
+.osu_m {
+    width: 50px;
+}
+
+.actionButton {
+    width: 80px;
+    height: 80px;
+    /* padding: 20px; */
+    position:fixed;
+    bottom:30px;
+    right:25px;
+    cursor:pointer;
+    background-color:black;
+	color:#FFF;
+	border-radius:50%;
+	/* text-align:center; */
+	box-shadow: 2px 2px 3px #999;
+    margin-top: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plus{
+    color: white;
+    display: block;
+    font-size: 4rem;
+    font-family: 'Roboto';
+    font-weight: 300;
+}
+
+.actionButtonVertical {
+    position:fixed;
+    bottom:120px;
+    right:30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.floatButton {
+    width: 70px;
+    height: 70px;
+    cursor:pointer;
+	border-radius:50%;
+	text-align:center;
+    color: black ;
+	/* box-shadow: 2px 2px 3px #999; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.actionButtonHorizontal {
+    position:fixed;
+    bottom:35px;
+    right:120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    color: black;
+}
+
+.floatButtonHorizontal {
+    width: 70px;
+    height: 70px;
+    cursor:pointer;
+	border-radius:50%;
+	text-align:center;
+    color: white ;
+    background-color: black;
+	/* box-shadow: 2px 2px 3px #999; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide, #certTab, #projectTab {
+    display: none;
+}
+
+.visible {
+    display: flex;
+}
+
+#resumeTab {
+    display: block;
+}
+
+.img_m {
+    width: 80%;
+    height: 80%;
 }
